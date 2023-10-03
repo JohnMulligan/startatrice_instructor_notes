@@ -1,0 +1,29 @@
+{
+  "ServiceName": "servicename",
+  "SourceConfiguration": {
+    "AuthenticationConfiguration": {
+      "ConnectionArn": "connectionarn"
+    },
+    "AutoDeploymentsEnabled": true,
+    "CodeRepository": {
+      "RepositoryUrl": "repositoryurl",
+      "SourceCodeVersion": {
+        "Type": "BRANCH",
+        "Value": "branchname"
+      },
+      "CodeConfiguration": {
+        "ConfigurationSource": "API",
+        "CodeConfigurationValues": {
+          "Runtime": "PYTHON_3",
+          "BuildCommand": "pip install -r requirements.txt",
+          "StartCommand": "gunicorn application:application",
+          "Port": "8080"
+        }
+      }
+    }
+  },
+  "InstanceConfiguration": {
+    "Cpu": "1 vCPU",
+    "Memory": "3 GB"
+  }
+}

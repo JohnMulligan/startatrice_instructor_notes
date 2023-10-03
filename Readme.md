@@ -33,6 +33,6 @@ By:
 
 1. Creating a branch for each student to push their updated forks to
 2. Putting those branchnames into the branchnames.txt file
-3. finding a way of looping through the below command while switching out the branchname parameter in the example_request.json file
+3. Running ```test.py```
 
-```aws apprunner create-service --cli-input-json file://example_request.json```
+That's it!
